@@ -1,4 +1,2 @@
 data/*
-disease_recognition_model.keras
-plant_recognition/plant_recognition_model-backup.keras
-plant_recognition/plant_recognition_model.keras
+*.keras

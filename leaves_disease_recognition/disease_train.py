@@ -7,6 +7,13 @@ import matplotlib.pyplot as plt
 from variables import disease_resolution, batchSize, disease_recognition_dataset_path
 import warnings
 
+# Переконаємося, що TensorFlow використовує GPU
+physical_devices = tf.config.list_physical_devices('GPU')
+if physical_devices:
+    tf.config.experimental.set_memory_growth(physical_devices[0], True)
+else:
+    print("GPU не знайдено. Використовується CPU.")
+
 warnings.filterwarnings('ignore')
 
 def disease_recognition_train():
