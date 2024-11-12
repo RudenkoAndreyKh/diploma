@@ -1,3 +1,4 @@
+import tensorflow as tf
 from keras.applications.inception_v3 import InceptionV3
 from keras.models import Model
 from keras.layers import Dense, GlobalAveragePooling2D
